@@ -57,17 +57,17 @@ function ConvertHandler() {
 
     switch (initUnit) {
       case "gal":
-        return (initNum * galToL).toFixed(5);
+        return Number((initNum * galToL).toFixed(5));
       case "L":
-        return (initNum / galToL).toFixed(5);
+        return Number((initNum / galToL).toFixed(5));
       case "lbs":
-        return (initNum * lbsToKg).toFixed(5);
+        return Number((initNum * lbsToKg).toFixed(5));
       case "kg":
-        return (initNum / lbsToKg).toFixed(5);
+        return Number((initNum / lbsToKg).toFixed(5));
       case "mi":
-        return (initNum * miToKm).toFixed(5);
+        return Number((initNum * miToKm).toFixed(5));
       case "km":
-        return (initNum / miToKm).toFixed(5);
+        return Number((initNum / miToKm).toFixed(5));
       default:
         return "Not a valid unit";
     }
